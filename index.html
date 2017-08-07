@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style: none;
+		}
+		.box{
+			width: 400px;
+			margin: 40px auto;
+			background-color: pink;
+		}
+		span{
+			display: inline-block;
+		}
+		.title{
+			position: relative;
+			width: 80px;
+			padding-right: 10px;
+			text-align: justify;
+			text-align-last:justify;
+		}
+		.title:after{
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: table;
+			content: ':';
+		}
+		.content{
+			box-sizing: border-box;
+			width: calc( 100% - 100px );
+			vertical-align: top;
+		}
+		.mom{
+			position: relative;
+			height: 300px;
+			width: 200px;
+			margin-left: 100px;
+			border-radius: 10px;
+			border:1px solid red;
+		}
+		.mom:after{
+			position: absolute;
+			top: -1px;
+			right: -1px;
+			content: " ";
+			width: 0;
+			height: 0;
+			border:20px solid red;
+			border-top-color:white;
+			border-right-color: white;
+			border-bottom-left-radius: inherit;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li>
+				<span class="title">姓名</span>
+				<span class="content">希尔</span>
+			</li>
+			<li>
+				<span class="title">年龄</span>
+				<span class="content">24</span>
+			</li>
+			<li>
+				<span class="title">联系电话</span>
+				<span class="content">12345678</span>
+			</li>
+			<li>
+				<span class="title">家庭住址</span>
+				<span class="content">江苏省南京市江宁区江苏省南京市江宁区江苏省南京市江宁区江苏省南京市</span>
+			</li>
+		</ul>
+	</div>
+
+	<div class="mom">
+		<ul>
+			<li>
+				<span class="title">姓名</span>
+				<span class="content">希尔</span>
+			</li>
+			<li>
+				<span class="title">年龄</span>
+				<span class="content">24</span>
+			</li>
+			<li>
+				<span class="title">联系电话</span>
+				<span class="content">12345678</span>
+			</li>
+			<li>
+				<span class="title">家庭住址</span>
+				<span class="content">江苏省南京市江宁区江苏省南京市江宁区江苏省南京市江宁区江苏省南京市</span>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
